@@ -1,5 +1,14 @@
 input.onButtonPressed(Button.A, function () {
-    music.play(music.createSoundExpression(WaveShape.Sawtooth, 1, 5000, 0, 255, 5000, SoundExpressionEffect.Vibrato, InterpolationCurve.Logarithmic), music.PlaybackMode.UntilDone)
+    music.play(music.createSoundExpression(
+    WaveShape.Noise,
+    5000,
+    1,
+    255,
+    0,
+    5000,
+    SoundExpressionEffect.Vibrato,
+    InterpolationCurve.Logarithmic
+    ), music.PlaybackMode.UntilDone)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
